@@ -1,0 +1,93 @@
+---
+:time_interval: 0.1
+:road_length: 100000
+:speed_limit: 100
+:num_lights: 40
+:min_light_gap: 300
+:light_spacing: :random
+:light_priority:
+  :equal: 2
+  :favorable: 2
+  :unfavorable: 2
+:num_curves: 20
+:curve_length: 200
+:min_curve_recommended_speed: 40
+:max_curve_recommended_speed: 80
+drivers:
+  :truck:
+    :name: :truck
+    :enabled: true
+    :max_speed: 27.7
+    :acceleration_rate: 0.28
+    :max_exceed_recommended: 0
+    :deceleration_rate: 6
+    :deceleration_square_divsor: 11.9
+    :deceleration_time_factor: 0.5
+    :risk_yellow_factor: 0.0
+    :reaction_time: 1.5
+  :granny:
+    :name: :granny
+    :enabled: true
+    :max_speed: 27.7
+    :acceleration_rate: 0.4
+    :max_exceed_recommended: 0.1
+    :deceleration_rate: 6
+    :deceleration_square_divsor: 11.9
+    :deceleration_time_factor: 0.25
+    :risk_yellow_factor: 0.0
+    :reaction_time: 2
+  :sedate:
+    :name: :sedate
+    :enabled: true
+    :max_speed: 27.7
+    :acceleration_rate: 0.6
+    :max_exceed_recommended: 0.2
+    :deceleration_rate: 6
+    :deceleration_square_divsor: 11.9
+    :deceleration_time_factor: 0.2
+    :risk_yellow_factor: 0.2
+    :reaction_time: 1.7
+  :calm:
+    :name: :calm
+    :enabled: true
+    :max_speed: 29.2
+    :acceleration_rate: 0.75
+    :max_exceed_recommended: 0.3
+    :deceleration_rate: 6
+    :deceleration_square_divsor: 11.9
+    :deceleration_time_factor: 0.15
+    :risk_yellow_factor: 0.4
+    :reaction_time: 1.1
+  :spirited:
+    :name: :spirited
+    :enabled: true
+    :max_speed: 30.5
+    :acceleration_rate: 1.0
+    :max_exceed_recommended: 0.6
+    :deceleration_rate: 6
+    :deceleration_square_divsor: 11.9
+    :deceleration_time_factor: 0.1
+    :risk_yellow_factor: 0.6
+    :reaction_time: 0.8
+  :aggressive:
+    :name: :aggressive
+    :enabled: true
+    :max_speed: 33.3
+    :acceleration_rate: 1.5
+    :max_exceed_recommended: 0.8
+    :deceleration_rate: 6
+    :deceleration_square_divsor: 11.9
+    :deceleration_time_factor: 0.08
+    :risk_yellow_factor: 0.8
+    :reaction_time: 0.7
+  :maniac:
+    :name: :maniac
+    :enabled: true
+    :max_speed: 38.9
+    :acceleration_rate: 2.8
+    :max_exceed_recommended: 1
+    :deceleration_rate: 6
+    :deceleration_square_divsor: 11.9
+    :deceleration_time_factor: 0.07
+    :risk_yellow_factor: 1.0
+    :reaction_time: 0.5
